@@ -10,10 +10,10 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<ComingSoon />} />
-          <Route path="/staging/" element={<Home />} />
-          <Route path="/staging/swap" element={<Swap />} />
-          <Route path="/staging/staketoken" element={<StakeToken />} />
-          <Route path="/staging/stakelp" element={<StakeLP />} />
+          <Route path="/staginghome" element={<Home />} />
+          <Route path="/stagingswap" element={<Swap />} />
+          <Route path="/stagingstaketoken" element={<StakeToken />} />
+          <Route path="/stagingstakelp" element={<StakeLP />} />
         </Routes>
       </Router>
   );
