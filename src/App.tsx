@@ -7,7 +7,6 @@ import ComingSoon from "./components/ComingSoon";
 
 export default function App() {
   return (
-      <Router>
         <Routes>
           <Route path="/" element={<ComingSoon />} />
           <Route path="/staginghome" element={<Home />} />
@@ -15,6 +14,5 @@ export default function App() {
           <Route path="/stagingstaketoken" element={<StakeToken />} />
           <Route path="/stagingstakelp" element={<StakeLP />} />
         </Routes>
-      </Router>
   );
 }
