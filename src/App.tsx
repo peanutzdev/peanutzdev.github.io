@@ -7,12 +7,14 @@ import ComingSoon from "./components/ComingSoon";
 
 export default function App() {
   return (
+      // <Router>
         <Routes>
-          <Route path="/" element={<ComingSoon />} />
-          <Route path="/staginghome" element={<Home />} />
-          <Route path="/stagingswap" element={<Swap />} />
-          <Route path="/stagingstaketoken" element={<StakeToken />} />
-          <Route path="/stagingstakelp" element={<StakeLP />} />
+          <Route path="" element={<ComingSoon />} />
+          <Route path="staginghome" element={<Home />} />
+          <Route path="stagingswap" element={<Swap />} />
+          <Route path="stagingstaketoken" element={<StakeToken />} />
+          <Route path="stagingstakelp" element={<StakeLP />} />
         </Routes>
+      // </Router>
   );
 }

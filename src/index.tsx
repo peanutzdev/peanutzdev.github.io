@@ -4,7 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import "./index.css";
-import { HashRouter } from 'react-router-dom';
+import { HashRouter, BrowserRouter } from 'react-router-dom';
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -15,11 +15,11 @@ const container = document.getElementById("root");
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
-      <ThirdwebProvider activeChain={activeChain}>
-      <HashRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <ThirdwebProvider activeChain={activeChain}>
         <App />
-      </HashRouter>
-      </ThirdwebProvider>
+        </ThirdwebProvider>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
