@@ -7,6 +7,7 @@ const ComingSoon = () => {
     return (
         <section className="comingSoon section">
             <h1 className="flexItem">Coming soon !</h1>
+            LTG
         </section>
     )
 }
